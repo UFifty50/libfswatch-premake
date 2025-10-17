@@ -4,7 +4,7 @@ workspace "libfswatch"
     configurations { "Debug", "Release" }
     architecture "x86_64"
     flags { "MultiProcessorCompile" }
-    debugdir "bin/" .. outputDir
+    debugdir ("bin/" .. outputDir)
 
 
 project "libfswatch"
