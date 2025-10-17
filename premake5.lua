@@ -1,11 +1,4 @@
-local outputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
-
-workspace "libfswatch"
-    configurations { "Debug", "Release" }
-    architecture "x86_64"
-    flags { "MultiProcessorCompile" }
-    debugdir ("bin/" .. outputDir)
-
+ooutputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "libfswatch"
     kind "StaticLib"
